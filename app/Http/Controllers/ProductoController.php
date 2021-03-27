@@ -10,7 +10,6 @@ class ProductoController extends Controller
 {
     public function index(){
         $Producto = Producto::all();
-        //dd($student);
         return view('index')->with('Producto', $Producto); 
     }
 
